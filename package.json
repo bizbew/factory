@@ -1,0 +1,29 @@
+{
+  "name": "mkweaving",
+  "version": "0.0.1",
+  "description": "tennis community + associate tennis player in Thailand",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bewsspace@bitbucket.org/bewsspace/tennis_webboard.git"
+  },
+  "author": "Bew Chaiwattanachai",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/bewsspace/tennis_webboard#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "express-sanitizer": "^1.0.2",
+    "express-session": "^1.15.6",
+    "method-override": "^2.3.10",
+    "mongoose": "^4.12.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.2.1",
+    "semantic-ui": "^2.2.13"
+  }
+}

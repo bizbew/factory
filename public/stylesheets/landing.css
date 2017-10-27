@@ -1,0 +1,135 @@
+body {
+  background-color: #000;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#heading::selection {
+    background: #e3ff00;
+}
+
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(../picture/fact1.jpg);
+  filter: grayscale(20%); 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(../picture/fact2.jpg);
+  animation-delay: 10s;
+  filter: grayscale(20%); 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(../picture/fact3.jpg);
+  animation-delay: 20s; 
+  filter: grayscale(20%);
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(../picture/fact4.jpg);
+  animation-delay: 30s; 
+  filter: grayscale(20%);
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+#footer{
+  height:10%;
+  width:100%;
+  position:fixed;
+  color:#f7f6ef;
+  background: #0f0f0f;
+  top:90%;
+}
+
+
+#enterBtn{
+  border:2.5px solid black;
+  background-color:transparent;
+  width:10%;
+  height:10%;
+  font-size:25px;
+  padding:8px 20px;
+  outline:none;
+  letter-spacing:3px;
+  box-shadow:0px 2px 2px black;
+}
+
+#enterBtn:hover{
+    background-color:rgba(0,0,0,0.25);
+}
+
+#enterBtn:active{
+    background-color:rgba(0,0,0,0.35); 
+    transform:translateY(1px);
+    box-shadow:0px 1px 1px black;
+}
+
+.row{
+  font-size:15px;
+  font-weight: 200;
+  margin:auto;
+  line-height: 3em;
+}
+
+span#heading{
+  background-color: #0f0f0f;
+  padding:2px 5px;
+  font-size:1.5em;
+  font-weight:300;
+  letter-spacing:2px;
+}
+
+span#minorheading{
+  background-color: rgba(255,255,255,0.5);
+  padding:2px 5px;
+}
